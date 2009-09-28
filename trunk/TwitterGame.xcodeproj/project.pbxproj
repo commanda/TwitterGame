@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C3E5B32104B9F18008AAB1B /* ADParticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3E5B31104B9F18008AAB1B /* ADParticle.m */; };
+		1D3623260D0F684500981E51 /* TwitterGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TwitterGameAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FD14FD0DC6FC130079059D /* EAGLView.m */; };
+		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
+		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
+		9009EB6F103BB92E00A2ACEB /* SingletonSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9009EB6E103BB92E00A2ACEB /* SingletonSoundManager.m */; };
+		9009EB7D103BBA5D00A2ACEB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9009EB7C103BBA5D00A2ACEB /* OpenAL.framework */; };
+		9009EB81103BBA7400A2ACEB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9009EB80103BBA7400A2ACEB /* AudioToolbox.framework */; };
+		9009EB84103BBABF00A2ACEB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9009EB83103BBABF00A2ACEB /* AVFoundation.framework */; };
+		9009EBA3103BBB7000A2ACEB /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9009EBA0103BBB7000A2ACEB /* music.mp3 */; };
+		9022BC4F0FF6DFC30034563B /* Picture_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9022BC4E0FF6DFC30034563B /* Picture_3.png */; };
+		90575315105333EB00470D83 /* ADGameOverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 90575314105333EB00470D83 /* ADGameOverAnimation.m */; };
+		9057534E105339CF00470D83 /* ADGameOverAnimation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9057534D105339CF00470D83 /* ADGameOverAnimation.xib */; };
+		905753BC10534AB800470D83 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 905753BB10534AB800470D83 /* star.png */; };
+		905817161060B145003E48F5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905817151060B145003E48F5 /* CoreLocation.framework */; };
+		9078E8F610670B380029E93D /* apple-birch-big.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9078E8F510670B380029E93D /* apple-birch-big.jpg */; };
+		909A380D1066D7C400943F0E /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A37F81066D7C300943F0E /* MGTwitterEngine.m */; };
+		909A380E1066D7C400943F0E /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A37FC1066D7C300943F0E /* MGTwitterHTTPURLConnection.m */; };
+		909A380F1066D7C400943F0E /* MGTwitterMessagesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A37FE1066D7C300943F0E /* MGTwitterMessagesParser.m */; };
+		909A38101066D7C400943F0E /* MGTwitterMiscParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A38001066D7C300943F0E /* MGTwitterMiscParser.m */; };
+		909A38111066D7C400943F0E /* MGTwitterStatusesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A38041066D7C300943F0E /* MGTwitterStatusesParser.m */; };
+		909A38121066D7C400943F0E /* MGTwitterUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A38061066D7C300943F0E /* MGTwitterUsersParser.m */; };
+		909A38131066D7C400943F0E /* MGTwitterXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A38081066D7C300943F0E /* MGTwitterXMLParser.m */; };
+		909A38141066D7C400943F0E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A380A1066D7C300943F0E /* NSData+Base64.m */; };
+		909A38151066D7C400943F0E /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 909A380C1066D7C300943F0E /* NSString+UUID.m */; };
+		90B6717E105C5C3400AEF24B /* bump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B67178105C5C3400AEF24B /* bump.mp3 */; };
+		90B6717F105C5C3400AEF24B /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B67179105C5C3400AEF24B /* end.mp3 */; };
+		90B67180105C5C3400AEF24B /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B6717A105C5C3400AEF24B /* hit.mp3 */; };
+		90B67181105C5C3400AEF24B /* jump.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B6717B105C5C3400AEF24B /* jump.mp3 */; };
+		90B67182105C5C3400AEF24B /* star.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B6717C105C5C3400AEF24B /* star.mp3 */; };
+		90B67183105C5C3400AEF24B /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 90B6717D105C5C3400AEF24B /* theme.mp3 */; };
+		90D15B18101D6FD80038DE28 /* ADTwitterDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D15B17101D6FD80038DE28 /* ADTwitterDatasource.m */; };
+		90E996B4106404BA00BB70DF /* libisimulate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90E996B3106404BA00BB70DF /* libisimulate.a */; };
+		90F20C9510328AC9000F5D2F /* ADTwitterLoginPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F20C9410328AC9000F5D2F /* ADTwitterLoginPage.m */; };
+		90F20CA610328B57000F5D2F /* ADTwitterLoginPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90F20CA510328B57000F5D2F /* ADTwitterLoginPage.xib */; };
+		DF63CDE3103BC0A100FEC566 /* empty_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = DF63CDE1103BC0A100FEC566 /* empty_heart.png */; };
+		DF63CDE4103BC0A100FEC566 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = DF63CDE2103BC0A100FEC566 /* heart.png */; };
+		DF6DC068102FCDC400CD8223 /* ADSpammer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DC067102FCDC400CD8223 /* ADSpammer.m */; };
+		DF6DC06A102FD06D00CD8223 /* default_profile_bigger.png in Resources */ = {isa = PBXBuildFile; fileRef = DF6DC069102FD06D00CD8223 /* default_profile_bigger.png */; };
+		DF6DC08A102FD23A00CD8223 /* ADCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6DC089102FD23A00CD8223 /* ADCharacter.m */; };
+		DF775433102801BB003A4ECA /* apple-birch-small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DF775432102801BB003A4ECA /* apple-birch-small.jpg */; };
+		DFAB9EDF0FF6FE4500E893F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAB9EDE0FF6FE4500E893F5 /* CoreGraphics.framework */; };
+		DFB8317A102FE6B5009DCBE7 /* ADHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB83179102FE6B5009DCBE7 /* ADHUD.m */; };
+		DFC4B1961027F06700B214D6 /* ADPlatformFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC4B1951027F06700B214D6 /* ADPlatformFactory.m */; };
+		DFDBBF070FF9D50800192973 /* GLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDBBF060FF9D50800192973 /* GLTexture.m */; };
+		DFDBBF0A0FF9D56600192973 /* ADGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDBBF090FF9D56600192973 /* ADGameController.m */; };
+		DFDBBF0E0FF9D61900192973 /* ADAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDBBF0D0FF9D61900192973 /* ADAvatar.m */; };
+		DFDBC0480FF9F27200192973 /* ADPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = DFDBC0470FF9F27200192973 /* ADPlatform.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C3E5B30104B9F18008AAB1B /* ADParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADParticle.h; sourceTree = "<group>"; };
+		1C3E5B31104B9F18008AAB1B /* ADParticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADParticle.m; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TwitterGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TwitterGameAppDelegate.h; path = Classes/TwitterGameAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TwitterGameAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TwitterGameAppDelegate.m; path = Classes/TwitterGameAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TwitterGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28FD14FC0DC6FC130079059D /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		28FD14FD0DC6FC130079059D /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TwitterGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterGame_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TwitterGame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TwitterGame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9009EB6D103BB92E00A2ACEB /* SingletonSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonSoundManager.h; sourceTree = "<group>"; };
+		9009EB6E103BB92E00A2ACEB /* SingletonSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonSoundManager.m; sourceTree = "<group>"; };
+		9009EB7C103BBA5D00A2ACEB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		9009EB80103BBA7400A2ACEB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9009EB83103BBABF00A2ACEB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9009EBA0103BBB7000A2ACEB /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		9022BC4E0FF6DFC30034563B /* Picture_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Picture_3.png; sourceTree = "<group>"; };
+		9022BC630FF6E2B20034563B /* MainTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTestViewController.h; sourceTree = "<group>"; };
+		9022BC640FF6E2B20034563B /* MainTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTestViewController.m; sourceTree = "<group>"; };
+		90575313105333EB00470D83 /* ADGameOverAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADGameOverAnimation.h; path = Classes/ADGameOverAnimation.h; sourceTree = "<group>"; };
+		90575314105333EB00470D83 /* ADGameOverAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADGameOverAnimation.m; path = Classes/ADGameOverAnimation.m; sourceTree = "<group>"; };
+		9057534D105339CF00470D83 /* ADGameOverAnimation.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ADGameOverAnimation.xib; sourceTree = "<group>"; };
+		905753BB10534AB800470D83 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		905817151060B145003E48F5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9078E8F510670B380029E93D /* apple-birch-big.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apple-birch-big.jpg"; sourceTree = "<group>"; };
+		909A37F61066D7C300943F0E /* MGTwitterEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngine_Prefix.pch; path = MGTwitterEngine/MGTwitterEngine_Prefix.pch; sourceTree = "<group>"; };
+		909A37F71066D7C300943F0E /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngine.h; path = MGTwitterEngine/MGTwitterEngine.h; sourceTree = "<group>"; };
+		909A37F81066D7C300943F0E /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterEngine.m; path = MGTwitterEngine/MGTwitterEngine.m; sourceTree = "<group>"; };
+		909A37F91066D7C300943F0E /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngineDelegate.h; path = MGTwitterEngine/MGTwitterEngineDelegate.h; sourceTree = "<group>"; };
+		909A37FA1066D7C300943F0E /* MGTwitterEngineGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterEngineGlobalHeader.h; path = MGTwitterEngine/MGTwitterEngineGlobalHeader.h; sourceTree = "<group>"; };
+		909A37FB1066D7C300943F0E /* MGTwitterHTTPURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterHTTPURLConnection.h; path = MGTwitterEngine/MGTwitterHTTPURLConnection.h; sourceTree = "<group>"; };
+		909A37FC1066D7C300943F0E /* MGTwitterHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterHTTPURLConnection.m; path = MGTwitterEngine/MGTwitterHTTPURLConnection.m; sourceTree = "<group>"; };
+		909A37FD1066D7C300943F0E /* MGTwitterMessagesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMessagesParser.h; path = MGTwitterEngine/MGTwitterMessagesParser.h; sourceTree = "<group>"; };
+		909A37FE1066D7C300943F0E /* MGTwitterMessagesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMessagesParser.m; path = MGTwitterEngine/MGTwitterMessagesParser.m; sourceTree = "<group>"; };
+		909A37FF1066D7C300943F0E /* MGTwitterMiscParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterMiscParser.h; path = MGTwitterEngine/MGTwitterMiscParser.h; sourceTree = "<group>"; };
+		909A38001066D7C300943F0E /* MGTwitterMiscParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterMiscParser.m; path = MGTwitterEngine/MGTwitterMiscParser.m; sourceTree = "<group>"; };
+		909A38011066D7C300943F0E /* MGTwitterParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterParserDelegate.h; path = MGTwitterEngine/MGTwitterParserDelegate.h; sourceTree = "<group>"; };
+		909A38021066D7C300943F0E /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterRequestTypes.h; path = MGTwitterEngine/MGTwitterRequestTypes.h; sourceTree = "<group>"; };
+		909A38031066D7C300943F0E /* MGTwitterStatusesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterStatusesParser.h; path = MGTwitterEngine/MGTwitterStatusesParser.h; sourceTree = "<group>"; };
+		909A38041066D7C300943F0E /* MGTwitterStatusesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterStatusesParser.m; path = MGTwitterEngine/MGTwitterStatusesParser.m; sourceTree = "<group>"; };
+		909A38051066D7C300943F0E /* MGTwitterUsersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterUsersParser.h; path = MGTwitterEngine/MGTwitterUsersParser.h; sourceTree = "<group>"; };
+		909A38061066D7C300943F0E /* MGTwitterUsersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterUsersParser.m; path = MGTwitterEngine/MGTwitterUsersParser.m; sourceTree = "<group>"; };
+		909A38071066D7C300943F0E /* MGTwitterXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGTwitterXMLParser.h; path = MGTwitterEngine/MGTwitterXMLParser.h; sourceTree = "<group>"; };
+		909A38081066D7C300943F0E /* MGTwitterXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGTwitterXMLParser.m; path = MGTwitterEngine/MGTwitterXMLParser.m; sourceTree = "<group>"; };
+		909A38091066D7C300943F0E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "MGTwitterEngine/NSData+Base64.h"; sourceTree = "<group>"; };
+		909A380A1066D7C300943F0E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "MGTwitterEngine/NSData+Base64.m"; sourceTree = "<group>"; };
+		909A380B1066D7C300943F0E /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "MGTwitterEngine/NSString+UUID.h"; sourceTree = "<group>"; };
+		909A380C1066D7C300943F0E /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "MGTwitterEngine/NSString+UUID.m"; sourceTree = "<group>"; };
+		90B67178105C5C3400AEF24B /* bump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bump.mp3; sourceTree = "<group>"; };
+		90B67179105C5C3400AEF24B /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		90B6717A105C5C3400AEF24B /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
+		90B6717B105C5C3400AEF24B /* jump.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = jump.mp3; sourceTree = "<group>"; };
+		90B6717C105C5C3400AEF24B /* star.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = star.mp3; sourceTree = "<group>"; };
+		90B6717D105C5C3400AEF24B /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		90CCA105106DEE5A002A18DB /* ADUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADUpdater.h; sourceTree = "<group>"; };
+		90D15B16101D6FD80038DE28 /* ADTwitterDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTwitterDatasource.h; sourceTree = "<group>"; };
+		90D15B17101D6FD80038DE28 /* ADTwitterDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTwitterDatasource.m; sourceTree = "<group>"; };
+		90E996B3106404BA00BB70DF /* libisimulate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libisimulate.a; path = "../../Downloads/libisimulate-3/libisimulate.a"; sourceTree = SOURCE_ROOT; };
+		90F20C9310328AC9000F5D2F /* ADTwitterLoginPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADTwitterLoginPage.h; path = Classes/ADTwitterLoginPage.h; sourceTree = "<group>"; };
+		90F20C9410328AC9000F5D2F /* ADTwitterLoginPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADTwitterLoginPage.m; path = Classes/ADTwitterLoginPage.m; sourceTree = "<group>"; };
+		90F20CA510328B57000F5D2F /* ADTwitterLoginPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ADTwitterLoginPage.xib; path = Classes/ADTwitterLoginPage.xib; sourceTree = "<group>"; };
+		DF63CDE1103BC0A100FEC566 /* empty_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_heart.png; sourceTree = "<group>"; };
+		DF63CDE2103BC0A100FEC566 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		DF6DC066102FCDC400CD8223 /* ADSpammer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSpammer.h; sourceTree = "<group>"; };
+		DF6DC067102FCDC400CD8223 /* ADSpammer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSpammer.m; sourceTree = "<group>"; };
+		DF6DC069102FD06D00CD8223 /* default_profile_bigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_profile_bigger.png; sourceTree = "<group>"; };
+		DF6DC088102FD23A00CD8223 /* ADCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCharacter.h; sourceTree = "<group>"; };
+		DF6DC089102FD23A00CD8223 /* ADCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCharacter.m; sourceTree = "<group>"; };
+		DF775432102801BB003A4ECA /* apple-birch-small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apple-birch-small.jpg"; sourceTree = "<group>"; };
+		DFAB9EDE0FF6FE4500E893F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFB83178102FE6B5009DCBE7 /* ADHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADHUD.h; path = Classes/ADHUD.h; sourceTree = "<group>"; };
+		DFB83179102FE6B5009DCBE7 /* ADHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADHUD.m; path = Classes/ADHUD.m; sourceTree = "<group>"; };
+		DFC4B1941027F06700B214D6 /* ADPlatformFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPlatformFactory.h; sourceTree = "<group>"; };
+		DFC4B1951027F06700B214D6 /* ADPlatformFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPlatformFactory.m; sourceTree = "<group>"; };
+		DFDBBF050FF9D50800192973 /* GLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTexture.h; sourceTree = "<group>"; };
+		DFDBBF060FF9D50800192973 /* GLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTexture.m; sourceTree = "<group>"; };
+		DFDBBF080FF9D56600192973 /* ADGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADGameController.h; path = Classes/ADGameController.h; sourceTree = "<group>"; };
+		DFDBBF090FF9D56600192973 /* ADGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADGameController.m; path = Classes/ADGameController.m; sourceTree = "<group>"; };
+		DFDBBF0C0FF9D61900192973 /* ADAvatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAvatar.h; sourceTree = "<group>"; };
+		DFDBBF0D0FF9D61900192973 /* ADAvatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADAvatar.m; sourceTree = "<group>"; };
+		DFDBC0460FF9F27200192973 /* ADPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPlatform.h; sourceTree = "<group>"; };
+		DFDBC0470FF9F27200192973 /* ADPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPlatform.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */,
+				28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */,
+				DFAB9EDF0FF6FE4500E893F5 /* CoreGraphics.framework in Frameworks */,
+				9009EB7D103BBA5D00A2ACEB /* OpenAL.framework in Frameworks */,
+				9009EB81103BBA7400A2ACEB /* AudioToolbox.framework in Frameworks */,
+				9009EB84103BBABF00A2ACEB /* AVFoundation.framework in Frameworks */,
+				905817161060B145003E48F5 /* CoreLocation.framework in Frameworks */,
+				90E996B4106404BA00BB70DF /* libisimulate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TwitterGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				1D3623240D0F684500981E51 /* TwitterGameAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TwitterGameAppDelegate.m */,
+				90F20CA510328B57000F5D2F /* ADTwitterLoginPage.xib */,
+				90F20C9310328AC9000F5D2F /* ADTwitterLoginPage.h */,
+				90F20C9410328AC9000F5D2F /* ADTwitterLoginPage.m */,
+				DFDBBF080FF9D56600192973 /* ADGameController.h */,
+				DFDBBF090FF9D56600192973 /* ADGameController.m */,
+				DFB83178102FE6B5009DCBE7 /* ADHUD.h */,
+				DFB83179102FE6B5009DCBE7 /* ADHUD.m */,
+				9057534D105339CF00470D83 /* ADGameOverAnimation.xib */,
+				90575313105333EB00470D83 /* ADGameOverAnimation.h */,
+				90575314105333EB00470D83 /* ADGameOverAnimation.m */,
+				909A372B1065EC7D00943F0E /* Character */,
+				909A372C1065EC9500943F0E /* Platforms */,
+				909A372A1065EBE600943F0E /* Utility */,
+				90D1599E101D2C5A0038DE28 /* MGTwitterEngine */,
+				909A37271065EB8400943F0E /* Unused */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* TwitterGame-Info.plist */,
+				32CA4F630368D1EE00C91783 /* TwitterGame_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90B67178105C5C3400AEF24B /* bump.mp3 */,
+				90B67179105C5C3400AEF24B /* end.mp3 */,
+				90B6717A105C5C3400AEF24B /* hit.mp3 */,
+				90B6717B105C5C3400AEF24B /* jump.mp3 */,
+				90B6717C105C5C3400AEF24B /* star.mp3 */,
+				90B6717D105C5C3400AEF24B /* theme.mp3 */,
+				9009EBA0103BBB7000A2ACEB /* music.mp3 */,
+				905753BB10534AB800470D83 /* star.png */,
+				9022BC4E0FF6DFC30034563B /* Picture_3.png */,
+				DF63CDE2103BC0A100FEC566 /* heart.png */,
+				DF63CDE1103BC0A100FEC566 /* empty_heart.png */,
+				DF6DC069102FD06D00CD8223 /* default_profile_bigger.png */,
+				9078E8F510670B380029E93D /* apple-birch-big.jpg */,
+				DF775432102801BB003A4ECA /* apple-birch-small.jpg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90E996B3106404BA00BB70DF /* libisimulate.a */,
+				905817151060B145003E48F5 /* CoreLocation.framework */,
+				9009EB83103BBABF00A2ACEB /* AVFoundation.framework */,
+				9009EB80103BBA7400A2ACEB /* AudioToolbox.framework */,
+				9009EB7C103BBA5D00A2ACEB /* OpenAL.framework */,
+				DFAB9EDE0FF6FE4500E893F5 /* CoreGraphics.framework */,
+				28FD15070DC6FC5B0079059D /* QuartzCore.framework */,
+				28FD14FF0DC6FC520079059D /* OpenGLES.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		909A37271065EB8400943F0E /* Unused */ = {
+			isa = PBXGroup;
+			children = (
+				9022BC630FF6E2B20034563B /* MainTestViewController.h */,
+				9022BC640FF6E2B20034563B /* MainTestViewController.m */,
+			);
+			name = Unused;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		909A372A1065EBE600943F0E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				90CCA105106DEE5A002A18DB /* ADUpdater.h */,
+				90D15B16101D6FD80038DE28 /* ADTwitterDatasource.h */,
+				90D15B17101D6FD80038DE28 /* ADTwitterDatasource.m */,
+				1C3E5B30104B9F18008AAB1B /* ADParticle.h */,
+				1C3E5B31104B9F18008AAB1B /* ADParticle.m */,
+				28FD14FC0DC6FC130079059D /* EAGLView.h */,
+				28FD14FD0DC6FC130079059D /* EAGLView.m */,
+				9009EB6D103BB92E00A2ACEB /* SingletonSoundManager.h */,
+				9009EB6E103BB92E00A2ACEB /* SingletonSoundManager.m */,
+				DFDBBF050FF9D50800192973 /* GLTexture.h */,
+				DFDBBF060FF9D50800192973 /* GLTexture.m */,
+			);
+			name = Utility;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		909A372B1065EC7D00943F0E /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				DF6DC088102FD23A00CD8223 /* ADCharacter.h */,
+				DF6DC089102FD23A00CD8223 /* ADCharacter.m */,
+				DFDBBF0C0FF9D61900192973 /* ADAvatar.h */,
+				DFDBBF0D0FF9D61900192973 /* ADAvatar.m */,
+				DF6DC066102FCDC400CD8223 /* ADSpammer.h */,
+				DF6DC067102FCDC400CD8223 /* ADSpammer.m */,
+			);
+			name = Character;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		909A372C1065EC9500943F0E /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				DFC4B1941027F06700B214D6 /* ADPlatformFactory.h */,
+				DFC4B1951027F06700B214D6 /* ADPlatformFactory.m */,
+				DFDBC0460FF9F27200192973 /* ADPlatform.h */,
+				DFDBC0470FF9F27200192973 /* ADPlatform.m */,
+			);
+			name = Platforms;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		90D1599E101D2C5A0038DE28 /* MGTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				909A37F61066D7C300943F0E /* MGTwitterEngine_Prefix.pch */,
+				909A37F71066D7C300943F0E /* MGTwitterEngine.h */,
+				909A37F81066D7C300943F0E /* MGTwitterEngine.m */,
+				909A37F91066D7C300943F0E /* MGTwitterEngineDelegate.h */,
+				909A37FA1066D7C300943F0E /* MGTwitterEngineGlobalHeader.h */,
+				909A37FB1066D7C300943F0E /* MGTwitterHTTPURLConnection.h */,
+				909A37FC1066D7C300943F0E /* MGTwitterHTTPURLConnection.m */,
+				909A37FD1066D7C300943F0E /* MGTwitterMessagesParser.h */,
+				909A37FE1066D7C300943F0E /* MGTwitterMessagesParser.m */,
+				909A37FF1066D7C300943F0E /* MGTwitterMiscParser.h */,
+				909A38001066D7C300943F0E /* MGTwitterMiscParser.m */,
+				909A38011066D7C300943F0E /* MGTwitterParserDelegate.h */,
+				909A38021066D7C300943F0E /* MGTwitterRequestTypes.h */,
+				909A38031066D7C300943F0E /* MGTwitterStatusesParser.h */,
+				909A38041066D7C300943F0E /* MGTwitterStatusesParser.m */,
+				909A38051066D7C300943F0E /* MGTwitterUsersParser.h */,
+				909A38061066D7C300943F0E /* MGTwitterUsersParser.m */,
+				909A38071066D7C300943F0E /* MGTwitterXMLParser.h */,
+				909A38081066D7C300943F0E /* MGTwitterXMLParser.m */,
+				909A38091066D7C300943F0E /* NSData+Base64.h */,
+				909A380A1066D7C300943F0E /* NSData+Base64.m */,
+				909A380B1066D7C300943F0E /* NSString+UUID.h */,
+				909A380C1066D7C300943F0E /* NSString+UUID.m */,
+			);
+			name = MGTwitterEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TwitterGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TwitterGame" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterGame;
+			productName = TwitterGame;
+			productReference = 1D6058910D05DD3D006BFB54 /* TwitterGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TwitterGame" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TwitterGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				9022BC4F0FF6DFC30034563B /* Picture_3.png in Resources */,
+				DF775433102801BB003A4ECA /* apple-birch-small.jpg in Resources */,
+				90F20CA610328B57000F5D2F /* ADTwitterLoginPage.xib in Resources */,
+				DF6DC06A102FD06D00CD8223 /* default_profile_bigger.png in Resources */,
+				DF63CDE3103BC0A100FEC566 /* empty_heart.png in Resources */,
+				DF63CDE4103BC0A100FEC566 /* heart.png in Resources */,
+				9009EBA3103BBB7000A2ACEB /* music.mp3 in Resources */,
+				9057534E105339CF00470D83 /* ADGameOverAnimation.xib in Resources */,
+				905753BC10534AB800470D83 /* star.png in Resources */,
+				90B6717E105C5C3400AEF24B /* bump.mp3 in Resources */,
+				90B6717F105C5C3400AEF24B /* end.mp3 in Resources */,
+				90B67180105C5C3400AEF24B /* hit.mp3 in Resources */,
+				90B67181105C5C3400AEF24B /* jump.mp3 in Resources */,
+				90B67182105C5C3400AEF24B /* star.mp3 in Resources */,
+				90B67183105C5C3400AEF24B /* theme.mp3 in Resources */,
+				9078E8F610670B380029E93D /* apple-birch-big.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TwitterGameAppDelegate.m in Sources */,
+				28FD14FE0DC6FC130079059D /* EAGLView.m in Sources */,
+				DFDBBF070FF9D50800192973 /* GLTexture.m in Sources */,
+				DFDBBF0A0FF9D56600192973 /* ADGameController.m in Sources */,
+				DFDBBF0E0FF9D61900192973 /* ADAvatar.m in Sources */,
+				DFDBC0480FF9F27200192973 /* ADPlatform.m in Sources */,
+				90D15B18101D6FD80038DE28 /* ADTwitterDatasource.m in Sources */,
+				DFC4B1961027F06700B214D6 /* ADPlatformFactory.m in Sources */,
+				90F20C9510328AC9000F5D2F /* ADTwitterLoginPage.m in Sources */,
+				DF6DC068102FCDC400CD8223 /* ADSpammer.m in Sources */,
+				DF6DC08A102FD23A00CD8223 /* ADCharacter.m in Sources */,
+				DFB8317A102FE6B5009DCBE7 /* ADHUD.m in Sources */,
+				9009EB6F103BB92E00A2ACEB /* SingletonSoundManager.m in Sources */,
+				1C3E5B32104B9F18008AAB1B /* ADParticle.m in Sources */,
+				90575315105333EB00470D83 /* ADGameOverAnimation.m in Sources */,
+				909A380D1066D7C400943F0E /* MGTwitterEngine.m in Sources */,
+				909A380E1066D7C400943F0E /* MGTwitterHTTPURLConnection.m in Sources */,
+				909A380F1066D7C400943F0E /* MGTwitterMessagesParser.m in Sources */,
+				909A38101066D7C400943F0E /* MGTwitterMiscParser.m in Sources */,
+				909A38111066D7C400943F0E /* MGTwitterStatusesParser.m in Sources */,
+				909A38121066D7C400943F0E /* MGTwitterUsersParser.m in Sources */,
+				909A38131066D7C400943F0E /* MGTwitterXMLParser.m in Sources */,
+				909A38141066D7C400943F0E /* NSData+Base64.m in Sources */,
+				909A38151066D7C400943F0E /* NSString+UUID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TwitterGame_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "TwitterGame-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Downloads/libisimulate-3\"",
+				);
+				PRODUCT_NAME = TwitterGame;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TwitterGame_Prefix.pch;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "TwitterGame-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../../Downloads/libisimulate-3\"",
+				);
+				PRODUCT_NAME = TwitterGame;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TwitterGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TwitterGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

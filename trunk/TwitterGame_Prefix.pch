@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'TwitterGame' target in the 'TwitterGame' project
+//
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#endif
+
+#define USE_UIVIEWS 0
+
